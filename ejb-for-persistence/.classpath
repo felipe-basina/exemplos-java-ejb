@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ejbModule"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/ejb-for-persistence-ear/EarContent/APP-INF/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="/ejb-for-persistence-ear/EarContent/APP-INF/lib/hibernate-entitymanager.jar"/>
+	<classpathentry kind="lib" path="/ejb-for-persistence-ear/EarContent/APP-INF/lib/log4j-1.2.11.jar"/>
+	<classpathentry kind="lib" path="E:/instalados/wls1212_dev/wls12120/wlserver/modules/javax.ejb_3.2.0.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

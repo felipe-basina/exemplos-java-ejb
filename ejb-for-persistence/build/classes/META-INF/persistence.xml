@@ -1,0 +1,29 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	<persistence-unit name="ejb-persistence-unit"
+		transaction-type="JTA">
+
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<jta-data-source>jdbc/ejb-ds</jta-data-source>
+
+		<class>ejb.persistence.entity.Person</class>
+		<class>ejb.persistence.entity.Address</class>
+		<class>ejb.persistence.entity.Audit</class>
+
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.transaction.manager_lookup_class"
+				value="org.hibernate.transaction.WeblogicTransactionManagerLookup" />
+			<property name="hibernate.query.factory_class"
+				value="org.hibernate.hql.classic.ClassicQueryTranslatorFactory" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
